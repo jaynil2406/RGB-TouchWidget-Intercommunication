@@ -173,7 +173,7 @@ OnButtonPress1(tWidget *psWidget)
         //
        // PushButtonTextSet(&g_sPushBtn, "Hide Welcome");
         GPIOPinWrite(GPIO_PORTQ_BASE, GREEN_LED,0);
-                                                              GPIOPinWrite(GPIO_PORTN_BASE, RED_LED, RED_LED);
+                                                            //  GPIOPinWrite(GPIO_PORTN_BASE, RED_LED, RED_LED);
                                                               GPIOPinWrite(GPIO_PORTQ_BASE, NEW_LED,0);
                                                               GPIOPinWrite(GPIO_PORTQ_BASE, BLUE_LED,0);
         //
@@ -222,7 +222,7 @@ OnButtonPress2(tWidget *psWidget)
         // Change the button text to indicate the new function.
         //
        // PushButtonTextSet(&g_sPushBtn, "Hide Welcome");
-        GPIOPinWrite(GPIO_PORTQ_BASE, GREEN_LED,GREEN_LED);
+      //  GPIOPinWrite(GPIO_PORTQ_BASE, GREEN_LED,GREEN_LED);
                                                               GPIOPinWrite(GPIO_PORTN_BASE, RED_LED, 0x0);
                                                               GPIOPinWrite(GPIO_PORTQ_BASE, NEW_LED,0);
                                                               GPIOPinWrite(GPIO_PORTQ_BASE, BLUE_LED,0);
@@ -275,7 +275,7 @@ OnButtonPress3(tWidget *psWidget)
             GPIOPinWrite(GPIO_PORTQ_BASE, GREEN_LED,0);
                                                     GPIOPinWrite(GPIO_PORTN_BASE, RED_LED, 0x0);
                                                     GPIOPinWrite(GPIO_PORTQ_BASE, NEW_LED,0);
-                                                    GPIOPinWrite(GPIO_PORTQ_BASE, BLUE_LED,BLUE_LED);
+                                                //    GPIOPinWrite(GPIO_PORTQ_BASE, BLUE_LED,BLUE_LED);
             //
             // Repaint the pushbutton and all widgets beneath it (in this case,
             // the welcome message).
