@@ -17,13 +17,13 @@ void sysTickISR()
     ch = getcUart0();
     SSI2_DR_R  =0;
     SSI2_DR_R = ch;
-       if(ch == 'G')
+       /*if(ch == 'G')
        {  RED_LED=0;BLUE_LED=0; GREEN_LED=1;ch=0;}
        else if(ch=='R')
        {  GREEN_LED=0; BLUE_LED=0; RED_LED=1;ch=0;}
 
        else if(ch=='B')
-           { GREEN_LED=0;  RED_LED=0; BLUE_LED=1;ch=0;}
+           { GREEN_LED=0;  RED_LED=0; BLUE_LED=1;ch=0;}*/
 }
 void main(void)
 {
